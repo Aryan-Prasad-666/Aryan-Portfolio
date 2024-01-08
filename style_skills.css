@@ -1,0 +1,459 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    height: 100%;
+}
+
+/* test */
+header {
+    position: fixed; /* Keep the navbar fixed at the top */
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar is above other content */
+    top: 0;
+    opacity: 99%; 
+}
+/* test */
+
+body{
+    /*test*/
+    background-image: url('./assets/bgp.jpg');
+    background-size: cover; /* Adjust as needed: 'cover' for full coverage, 'contain' for containment */
+    background-position: center;
+    background-attachment: fixed; /* 'fixed' for a fixed background */
+    background-repeat: no-repeat;
+    /*test*/
+
+    /* background-color: #13293D; */
+    color: #d2ced7;
+    font-family: 'Roboto Mono', monospace;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: #31263e;
+    border-bottom:1px solid #0d031a;
+    box-shadow: 0 -5px 10px 3px rgba(0, 0, 0, 0.5) inset;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 22px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #d2ced7;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li .a1:hover{
+    color: #fefdfe;
+    font-size: 1.01rem;
+}
+
+.active{
+    color: #fff;
+}
+
+.contact{
+    background-color: #7a6895;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #0a080c;
+}
+
+.contact:hover{
+    background-color: transparent;
+    border: 1px solid #d2ced7;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.contact-btn{
+    background-color: #7a6895;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #d2ced7;
+    color: #d2ced7;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.contact-btn:hover{
+    background-color: #31263E;
+    color: #fff;
+}
+
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Apply animations to navbar elements */
+  nav, main{
+    animation: fadeInDown 0.8s ease-out;
+  }
+
+  .left{
+    font-size: 1.5rem;
+    background: linear-gradient(90deg, #ff0000, #f3a932, #ffff00, #ff00f3, #1fc516, #13ccd6, #0033ff, #ff00c4, #ff0000);
+	background-size: 400%;
+    -webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+    background-clip: text;
+	animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0%;
+	}
+
+    50%{
+        background-position: 200%;
+    }
+
+	100% {
+		background-position: 400%;
+	}
+}
+
+.skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    border: 2px solid rgb(6, 1, 19);
+    margin-top: 100px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    height: 100%;
+    background: #31263e;
+    opacity: 0.9;
+    border-radius: 1rem;
+}
+
+.heading{
+    font-weight: bold;
+    font-size: xx-large;
+    width: 100%;
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    background: linear-gradient(90deg, #ff0000, #f3a932, #ffff00, #ff00f3, #1fc516, #13ccd6, #0033ff, #ff00c4, #ff0000);
+	background-size: 400%;
+    -webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+    background-clip: text;
+	animation: animate 20s linear infinite;
+}
+
+h3{
+    display: flex;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: large;
+    width: 80%;
+}
+
+.content p{
+    margin: 0.5rem 0;
+}
+
+.skills{
+    list-style: none;
+}
+
+.skills li{
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.bars{
+    width: 70%;
+}
+
+.bar{
+    display: block;
+    background: #12011a;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+@media(max-width: 1100px){
+    .bar{
+        height: 10px;
+    }
+
+    .bar span{
+        height: 10px;
+    }
+}
+
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+}
+
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(257,0,140,1)0% , rgba(252,103,103,1)100%);
+}
+
+.c{
+    width: 80%;
+    animation: c 3s;
+}
+
+.java{
+    width: 90%;
+    animation: java 3s;
+}
+
+.html{
+    width: 95%;
+    animation: html 3s;
+}
+
+.css{
+    width: 70%;
+    animation: css 3s;
+}
+
+.javascript{
+    width: 50%;
+    animation: javascript 3s;
+}
+
+.python{
+    width: 30%;
+    animation: python 3s;
+}
+
+@keyframes c{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes java{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 95%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+
+.achievements{
+    margin-top: 2rem;
+}
+
+.list_of_achievements{
+    margin-bottom: 1rem;
+    width: 90%;
+}
+
+.list_of_achievements ul{
+    list-style:disc;
+    line-height: 2rem;
+    font-size: large;
+}
+
+.list_of_achievements ul li{
+    margin: 1rem 1rem;
+}
+
+footer{
+    margin-top: auto;
+    background-color: #31263E;
+    width: 100%;
+    opacity: 90%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #d2ced7;
+    border-top: 1px solid #0d031a;
+    box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.5) inset;
+    
+}
+
+.footer-left{
+    font-size: 1.5rem;
+    background: linear-gradient(90deg, #ff0000, #f3a932, #ffff00, #ff00f3, #1fc516, #13ccd6, #0033ff, #ff00c4, #ff0000);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animate 20s linear infinite;
+}
+
+.footer-right{
+    font-size: 0.7rem;
+    background: linear-gradient(90deg, #ff0000, #f3a932, #ffff00, #ff00f3, #1fc516, #13ccd6, #0033ff, #ff00c4, #ff0000);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animate 20s linear infinite;
+}
+
+@media(max-width: 700px){
+    .footer-right{
+        font-size: 0.3rem;
+        margin: 10px 10px;
+    }
+
+    .footer-left{
+        margin-left: 20px;
+    }
+}
+
+#preloader{
+    background: black url(./assets/galaxy-6141_512.gif) no-repeat center center;
+    background-size: 10%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+    bottom: 0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Start with the sidebar outside the viewport */
+    height: 100vh;
+    width: 250px;
+    z-index: 1000000;
+    background-color: rgba(15, 0, 18, 0.8);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: right 0.3s ease; /* Add a smooth transition for the 'right' property */
+}
+
+.sidebar.show {
+    right: 0; /* Show the sidebar by bringing it into the viewport */
+}
+
+.sidebar li{
+    width: 100%;
+    margin: 1rem 1rem;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+#ham{
+    display: none;
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+
+    #ham{
+        display: flex;
+    }
+}
+
+@media(max-width: 300px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+

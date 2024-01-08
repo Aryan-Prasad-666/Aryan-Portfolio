@@ -1,0 +1,425 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    height: 100%;
+}
+
+/* test */
+header {
+    position: fixed; /* navbar fixed*/
+    width: 100%;
+    z-index: 1000; 
+    top: 0;
+    opacity: 99%; 
+}
+/* test */
+
+body{
+    /*test*/
+    background-image: url('./assets/bgp.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed; /* fixed background */
+    background-repeat: no-repeat;
+    /*test*/
+
+    /* background-color: #13293D; */
+    color: #d2ced7;
+    font-family: 'Roboto Mono', monospace;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: #31263E;
+    border-bottom:1px solid #0d031a;
+    box-shadow: 0 -5px 10px 3px rgba(0, 0, 0, 0.5) inset;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 22px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #d2ced7;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li .a1:hover{
+    color: #fefdfe;
+    font-size: 1.01rem;
+}
+
+.active{
+    color: #fff;
+}
+
+main hr{
+    border: 0;
+    background-color: #d2ced7;
+    height: 1.2px;
+    margin: 30px 80px;
+}
+
+.left{
+    font-size: 1.5rem;
+    background: linear-gradient(90deg, #ff0000, #f3a932, #ffff00, #ff00f3, #1fc516, #13ccd6, #0033ff, #ff00c4, #ff0000);
+	background-size: 400%;
+    -webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+    background-clip: text;
+	animation: animate 20s linear infinite;
+}
+
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 200px 0;
+}
+
+@media (max-width: 1050px){
+    .firstSection{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 140px;
+        margin-bottom: 50px;
+    }
+
+    .leftSection{
+        width: 90%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .rightSection{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .leftSection .btn{
+        margin: 0.5rem 0;
+    }
+}
+
+@media (min-width: 1050px){
+
+    .firstSection > div{
+        width: 32%;
+    }
+}
+
+.leftSection{
+    font-size: 1.5rem;
+}
+
+.leftSection .buttons{
+    padding: 2rem 0;
+}
+
+.contact{
+    background-color: #7a6895;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #0a080c;
+}
+
+.contact:hover{
+    background-color: transparent;
+    border: 1px solid #d2ced7;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.contact-btn{
+    background-color: #7a6895;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #d2ced7;
+    color: #d2ced7;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.contact-btn:hover{
+    background-color: #31263E;
+    color: #fff;
+}
+
+.leftSection .btn{
+    background-color: transparent;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #d2ced7;
+    color: #d2ced7;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    box-shadow: 3px 3px #d2ced7;
+}
+
+.leftSection .btn:hover{
+    background-color: #31263E;
+    color: #fff;
+}
+
+.rightSection img{
+    width: 100%;
+    border-radius: 100%;
+    transition: all 0.8s;
+}
+
+.rightSection img:hover{
+    transform: scale(1.15);
+}
+
+#name{
+    color: #c6b6ce;
+}
+
+#element{
+    color: #c6b6ce;
+    text-shadow: 2px 2px 2px rgba(241, 238, 242, 0);
+    background: linear-gradient(90deg, #ff0000, #f3a932, #ffff00, #ff00f3, #1fc516, #13ccd6, #0033ff, #ff00c4, #ff0000);
+	background-size: 400%;
+    -webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+    background-clip: text;
+	animation: animate 20s linear infinite;
+}
+
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Apply animations to navbar elements */
+  nav, main{
+    animation: fadeInDown 0.8s ease-out;
+  }
+
+  .secondSection{
+        width: 100%;
+        height: auto;
+    }
+
+    .secondSection h1{
+        font-size: 1.7rem;
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(90deg, #ff0000, #f3a932, #ffff00, #ff00f3, #1fc516, #13ccd6, #0033ff, #ff00c4, #ff0000);
+	    background-size: 400%;
+        -webkit-text-fill-color: transparent;
+	    -webkit-background-clip: text;
+        background-clip: text;
+	    animation: animate 20s linear infinite;
+    }
+
+    .card-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .card{
+        width: 325px;
+        background-color: #31263E;
+        border-radius: 8px;
+        border: 2px solid #d2ced7;
+        overflow: hidden;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+        margin: 20px;
+        height: fit-content;
+    }
+
+    .card img{
+        width: 100%;
+        height: 50%;
+        border-bottom: 2px solid #d2ced7;
+    }
+
+    .card-content{
+        padding: 16px;
+    }
+
+    .card-content h3{
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+
+    .card-content p{
+        color: #d2ced7;
+        font-size: 15px;
+        line-height: 1.3;
+    }
+
+    .card-content .card-btn{
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: #7a6895;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-top: 16px;
+        color: #d2ced7;
+        border: 2px solid #d2ced7;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .card-btn:hover{
+        background-color: transparent;
+        color: #fff;
+    }
+
+    footer{
+        margin-top: auto;
+        background-color: #31263E;
+        width: 100%;
+        opacity: 90%;
+        height: 70px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #d2ced7;
+        border-top: 1px solid #0d031a;
+        box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.5) inset;
+        
+    }
+
+    .footer-left{
+        font-size: 1.5rem;
+        background: linear-gradient(90deg, #ff0000, #f3a932, #ffff00, #ff00f3, #1fc516, #13ccd6, #0033ff, #ff00c4, #ff0000);
+	    background-size: 400%;
+        -webkit-text-fill-color: transparent;
+	    -webkit-background-clip: text;
+        background-clip: text;
+	    animation: animate 20s linear infinite;
+    }
+
+    .footer-right{
+        font-size: 0.7rem;
+        background: linear-gradient(90deg, #ff0000, #f3a932, #ffff00, #ff00f3, #1fc516, #13ccd6, #0033ff, #ff00c4, #ff0000);
+	    background-size: 400%;
+        -webkit-text-fill-color: transparent;
+	    -webkit-background-clip: text;
+        background-clip: text;
+	    animation: animate 20s linear infinite;
+    }
+
+    @media(max-width: 700px){
+        .footer-right{
+            font-size: 0.3rem;
+            margin: 10px 10px;
+        }
+
+        .footer-left{
+            margin-left: 20px;
+        }
+    }
+
+    @keyframes animate {
+        0% {
+            background-position: 0%;
+        }
+    
+        50%{
+            background-position: 200%;
+        }
+    
+        100% {
+            background-position: 400%;
+        }
+    }
+
+    #preloader{
+        background: black url(./assets/galaxy-6141_512.gif) no-repeat center center;
+        background-size: 10%;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 10000;
+        bottom: 0;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        right: -250px; /* Start with the sidebar outside the viewport */
+        height: 100vh;
+        width: 250px;
+        z-index: 1000000;
+        background-color: rgba(15, 0, 18, 0.8);
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        transition: right 0.3s ease; /* Add a smooth transition for the 'right' property */
+    }
+    
+    .sidebar.show {
+        right: 0; /* Show the sidebar by bringing it into the viewport */
+    }
+    
+    .sidebar li{
+        width: 100%;
+        margin: 1rem 1rem;
+    }
+    
+    .sidebar a{
+        width: 100%;
+    }
+    
+    #ham{
+        display: none;
+    }
+    
+    @media(max-width: 800px){
+        .hideOnMobile{
+            display: none;
+        }
+    
+        #ham{
+            display: flex;
+        }
+    }
+    
+    @media(max-width: 300px){
+        .sidebar{
+            width: 100%;
+        }
+    }
