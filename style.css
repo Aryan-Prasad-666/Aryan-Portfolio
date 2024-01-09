@@ -264,7 +264,7 @@ main hr{
         overflow: hidden;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
         margin: 20px;
-        height: fit-content;
+        height: 375px;
     }
 
     .card img{

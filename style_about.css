@@ -186,7 +186,13 @@ nav ul li .a1:hover{
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     margin-bottom: 1.5rem;
-    font-size: large;
+    font-size: medium;
+}
+
+@media(max-width: 500px) {
+    .content{
+        font-size: small;
+    }
 }
 
 .content p{
