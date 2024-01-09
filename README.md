@@ -1,6 +1,8 @@
 This is my portfolio website created using HTML, CSS, and JavaScript.
 To ensure the best viewing experience of my portfolio website, I recommend that you view it on a desktop or laptop. 😊😊😊
 
+The website is hosted on GitHub Pages and can be accessed at:
+                              https://aryan-prasad-666.github.io/Aryan-Portfolio/
 
 This website was built using the following technologies:
 
