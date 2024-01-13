@@ -245,16 +245,6 @@ footer{
     }
 }
 
-#preloader{
-    background: black url(./assets/galaxy-6141_512.gif) no-repeat center center;
-    background-size: 10%;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 10000;
-    bottom: 0;
-}
-
 .sidebar {
     position: fixed;
     top: 0;
