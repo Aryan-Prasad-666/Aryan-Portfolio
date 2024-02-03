@@ -12,6 +12,7 @@ This website was built using the following technologies:
 - typed.js
 - vanilla-tilt.js
 - Font Awesome
+- swiper.js
 
 This website includes the following features:
 
@@ -21,3 +22,4 @@ This website includes the following features:
 - A skills section that highlights my skills and achievements
 - A portfolio section that showcases my projects
 - A contact section that allows you to get in touch with me
+- A testimonials section
