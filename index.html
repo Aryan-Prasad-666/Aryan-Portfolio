@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
 </head>
 <body>
 
@@ -86,6 +87,50 @@
             </div>
     
         </section>
+        <hr>
+        <section class="container">
+            <h1>Testimonials</h1>
+            <div class="testimonial mySwiper">
+              <div class="testi-content swiper-wrapper">
+                <div class="slide swiper-slide">
+                  <img src="./assets/Testimonial2.jpg" alt="" class="image" />
+                  <p>
+                    I am delighted to provide a testimonial for Aryan Prasad, a brilliant web developer with exceptional intelligence and technical proficiency. Aryan consistently impresses with his ability to tackle complex challenges, delivering flawless and innovative solutions. I wholeheartedly recommend Aryan as a smart and talented student who consistently exceeds expectations.
+                  </p>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="30px"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#15013C" d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z"/></svg>
+                  <div class="details">
+                    <span class="name">Adarsh Sharma</span>
+                    <span class="job">SDE at Maersk</span>
+                  </div>
+                </div>
+                <div class="slide swiper-slide">
+                  <img src="./assets/Testimonial1.jpg" alt="" class="image" />
+                  <p>
+                    Aryan is very smart and hard working. He should be the next prime minister of India
+                  </p>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="30px"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#15013C" d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z"/></svg>
+                  <div class="details">
+                    <span class="name">Narendra Modi</span>
+                    <span class="job">Prime Minister</span>
+                  </div>
+                </div>
+                <div class="slide swiper-slide">
+                  <img src="./assets/Testimonial3.jpg" alt="" class="image" />
+                  <p>
+                    I am pleased to express my admiration for Aryan Prasad, an outstanding web developer whose intelligence and skill set have truly set him apart.
+                  </p>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="30px"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#15013C" d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z"/></svg>
+                  <div class="details">
+                    <span class="name">Putin</span>
+                    <span class="job">President of Russia</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next n-btn"></div>
+              <div class="swiper-button-prev n-btn"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </section>
     </main>
     <footer>
         <div class="footer-left">
@@ -99,6 +144,7 @@
 
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="./swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
     <script>
         var typed = new Typed('#element', {
