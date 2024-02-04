@@ -258,6 +258,88 @@ nav ul li .a1:hover{
 }
 
 
+.con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    width: 60%;
+    background: linear-gradient(217deg, rgba(122, 104, 149, 1), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(49, 38, 62, 1), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(31, 23, 40, 1), rgba(0,0,255,0) 70.71%);
+    margin-bottom: 40px;
+    margin-top: 1rem;
+    padding: 2rem;
+}
+
+.contact-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-inputs{
+    width: 80%;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    border-radius: 50px;
+    background: linear-gradient(135deg,#766f7d, #7a6895);
+    border: 2px solid black;
+
+
+}
+
+.contact-form textarea{
+    height: 140px;
+    padding-top:15px;
+    border-radius: 20px;
+}
+
+.contact-inputs::placeholder{
+    color: #fff;
+}
+
+.contact-form button{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #d2ced7;
+    color: #d2ced7;
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    margin: 1rem;
+    gap: 10px;
+}
+
+.contact-form button:hover{
+    background-color: #d4c5e5;
+    color: #220631;
+    border-color: #050007;
+}
+
+.contact-form button img{
+    height: 15px;
+}
+
+
 
 
 
