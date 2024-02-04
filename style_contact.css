@@ -296,7 +296,7 @@ nav ul li .a1:hover{
     outline: none;
     padding-left: 25px;
     border-radius: 50px;
-    background: linear-gradient(135deg,#766f7d, #7a6895);
+    background-color: #eae3f0;
     border: 2px solid black;
 
 
@@ -309,7 +309,7 @@ nav ul li .a1:hover{
 }
 
 .contact-inputs::placeholder{
-    color: #fff;
+    color: #a9a9a9;
 }
 
 .contact-form button{
