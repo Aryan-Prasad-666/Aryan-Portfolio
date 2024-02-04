@@ -13,6 +13,7 @@ This website was built using the following technologies:
 - vanilla-tilt.js
 - Font Awesome
 - swiper.js
+- web3forms contact form API
 
 This website includes the following features:
 
@@ -23,3 +24,4 @@ This website includes the following features:
 - A portfolio section that showcases my projects
 - A contact section that allows you to get in touch with me
 - A testimonials section
+- A contact form through which you can send your message easily
