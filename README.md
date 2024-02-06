@@ -13,7 +13,7 @@ This website was built using the following technologies:
 - vanilla-tilt.js
 - Font Awesome
 - swiper.js
-- web3forms contact form API
+- web3forms API
 
 This website includes the following features:
 
