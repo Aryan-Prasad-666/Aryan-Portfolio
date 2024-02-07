@@ -452,10 +452,4 @@ footer{
     }
 }
 
-@media(max-width: 300px){
-    .sidebar{
-        width: 100%;
-    }
-}
-
 

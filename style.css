@@ -522,9 +522,3 @@ main hr{
             display: flex;
         }
     }
-    
-    @media(max-width: 300px){
-        .sidebar{
-            width: 100%;
-        }
-    }
